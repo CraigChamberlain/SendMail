@@ -1,4 +1,4 @@
-# MimeKit.PWSH
+# SendMail
 Module of helper tools for the MimeKit library to replace `Send-MailMessage`.
 
 As you may know `Send-MailMessage` is depricated and there is no versitile replacement without having to import nuget packages or dlls and do C# coding in the powershell environment using a library such as [MimeKit](https://mimekit.net/).
