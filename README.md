@@ -21,7 +21,7 @@ I propose a workflow such as this:
       Send-Mail -From "some.otherperson@example.com" -SmtpServer "smtp.example.com" -Port $config.Port 25 -Authentication $Cred -UseSsl
 Or
 
-$Connection = Connect-Smtp -SmtpServer "smtp.example.com" -Port $config.Port 25 -Authentication $Cred -UseSsl
+    $Connection = Connect-Smtp -SmtpServer "smtp.example.com" -Port $config.Port 25 -Authentication $Cred -UseSsl
 
     Get-SomeData |
       For-EachObject {
@@ -29,5 +29,5 @@ $Connection = Connect-Smtp -SmtpServer "smtp.example.com" -Port $config.Port 25 
       } |
       Send-Mail -From "some.otherperson@example.com" -Connection $Connection
 
-$Connection | Disconnect-Smtp
+    $Connection | Disconnect-Smtp
       
