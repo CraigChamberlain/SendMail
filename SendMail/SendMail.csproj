@@ -8,6 +8,9 @@
     <Company>Craig Chamberlain IT</Company>
     <Product>PowerShell Module</Product>
     <PackageTags>PSModule</PackageTags>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CraigChamberlain/SendMail</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
 
   </PropertyGroup>
 
@@ -18,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="IsamsBatchApi.psd1">
+    <None Update="SendMail.psd1">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
