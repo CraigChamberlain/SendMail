@@ -8,13 +8,13 @@ This tool will have support for creating connections to any supported SMTP serve
 
 I have replicated the API of `Send-MailMessage` so that the new module can replace it without re-writing anything other than the command.
 
-##Install##
+## Install
 
 ````pwsh
 Install-Module SendMail
 ````
 
-##Examples##
+## Examples
 
 ````pwsh
 Get-SomeData |
