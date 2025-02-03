@@ -1,4 +1,10 @@
-﻿dotnet publish
-Import-Module "./bin/Debug/net7.0/publish/MimeKit.PWSH.dll"
+﻿param(
+	[switch] $JustTest
+)
 
-Invoke-Pester ./tests
+if  (!$JustTest){
+dotnet publish "$PSScriptRoot" -c Release
+}
+Import-Module "$PSScriptRoot/bin/Release/net7.0/publish/SendMail.dll"
+
+Invoke-Pester "$PSScriptRoot/tests"
